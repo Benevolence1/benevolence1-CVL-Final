@@ -2,7 +2,7 @@ var video;
 var vScale = 6;
 var canvas;
 let currentFill = 'black'; // default color
-
+let bck = 'white'
 
 function setup() {
   canvas = createCanvas(840, 454);
@@ -10,7 +10,7 @@ function setup() {
   colorMode(HSB);
   video = createCapture(VIDEO);
   video.size(width / vScale, height / vScale);
-  frameRate(16);
+  frameRate(30);
   canvas.parent('sketch-holder');
 
 const changeFill = document.getElementById('change-fill');
@@ -20,6 +20,17 @@ changeFill.addEventListener('click', () => {
   let b = random(200);   // brightness 0–100
   currentFill = color(h, s, b); // store as a p5 color object
 });
+
+const backgroundButton = document.getElementById('change-bck');
+backgroundButton.addEventListener('click', () => {
+   let h = random(310);   // hue 0–360
+  let s = random(80)    // saturation 0–100
+  let b = random(200);   // brightness 0–100
+  bck = color(h, s, b);
+});
+
+
+
 
 const interactiveHeader = document.querySelector('.Interactive-h2');
 interactiveHeader.addEventListener('mouseover', ()=>{
@@ -60,7 +71,7 @@ Howdid.addEventListener('mouseover', ()=>{
 // so fill(currentFill) so that it uses the new color
 
 function draw() {
-  background('rgba(255, 255, 255, 1)');
+  background(bck);
   video.loadPixels();
 
   for (var y = 0; y < video.height; y++) {
