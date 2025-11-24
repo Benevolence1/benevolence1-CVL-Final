@@ -1,0 +1,335 @@
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.container{
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.author-image{
+
+  height:auto;
+}
+
+body{
+ font-family: sans-serif;
+ color: #ffffff;
+ border-top: 18px solid #00ff95;
+ position: relative;
+ background-color: #000000;
+ 
+}
+
+.How
+
+.inverted{
+  font-style: italic;
+  margin: 0%;
+  margin-bottom: 10px;
+}
+
+.Code-image{
+  /* display: inline-block; */
+  /* margin: 100px; */
+  width: 100%;
+  height: auto;
+}
+
+/* the body deals with text and  */
+
+
+
+/* smaller elements */
+
+
+h1, h2, h3{
+  color: #00ddff;
+}
+
+
+
+h1{
+  color: #ffffff;
+  font-size: 26px;
+  /* font-family:sans-serif; */
+  text-transform: uppercase;
+  font-style: italic;
+
+
+
+}
+
+h2{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  /* font-family:sans-serif; */
+
+}
+
+h3{
+  font-size: 30px;
+  /* font-family: sans-serif; */
+}
+
+h4{
+  font-size : 20px;
+  /* font-family: sans-serif; */
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p{
+  font-size: 22px;
+  /* font-family: sans-serif; */
+  line-height: 1.5;
+  margin-bottom: 20px;
+  /* display:inline;
+ */}
+
+ul, ol{
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+
+
+li{
+  font-size: 20px;
+  margin-bottom: 10px;
+  display:inline;
+  /* font-family: sans-serif; */
+
+
+}
+
+li:last-child{
+  margin-bottom: 0px;
+}
+/* we don't want space at the bottom or top of our elements
+so we use a pseudo element to take the margin away. */
+
+
+/* footer p {
+  font-size: 16px;
+} */
+
+
+/* header p  {
+  font-style : italic;
+} */
+
+
+#author{
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright{
+  font-size: 16px;
+
+}
+
+
+/* specifying height auto is only 'nececssary
+if the height is specifyed in html
+in case we don't do that 
+the 'other one' (in this case the height)
+will automatically adapt */
+
+
+.related-author{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.ul-related-posts {
+  list-style: none; 
+}
+
+
+.main-header {
+  background-color: rgb(9, 9, 9);
+  padding: 20px 40px;
+  /* 20 for top and bottom and 40 for the left and right */
+  margin-bottom: 60px;
+  /* height: 60px; */
+}
+
+/* The original box model works
+by doing the height + padding (I think)
+so height + padding top and bottom */
+
+.post-header{
+  margin-bottom: 40px;
+  position:relative;
+}
+
+h3{
+margin:20px 10px
+}
+
+h4{
+margin-bottom: 15px;
+}
+aside{
+  background-color: rgb(20, 20, 20);
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+ padding: 50px 0;
+  width: 500px;
+ margin-bottom: 15px;
+}
+
+/* styling links: */
+
+nav a:link{
+  /* background-color: orangered;
+  margin:20px;
+  /* padding:10px; */
+
+  display: inline-block;
+margin-top:10px;
+margin-right:5px;
+padding:10px;
+}
+
+/* .Interactive-h2:hover{
+  color: currentFill;
+  text-decoration: underline ;
+} */
+
+nav a:last-child{
+  margin-right:0px;
+}
+/* 
+#change-fill{
+  position: relative;
+  margin-left: 750px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  padding:
+  background-color: #1d10ad;
+
+} */
+
+/* #change-bck{
+  font-size:22px;
+  padding:5px;
+  cursor:pointer;
+  position:absolute;
+  top:50px;
+  left:150px;
+  margin-bottom: 10px;
+  bottom:-50px;
+  right:50px;
+} */
+/* 
+#clear-btn{
+  font-size:22px;
+  padding:5px;
+  cursor:pointer;
+  position:absolute;
+  top:50px;
+  left:50px;
+  margin-bottom: 10px;
+  bottom:-50px;
+  right:50px;
+} */
+
+h1::first-letter{
+  font-style:normal;
+  font-style: italic;
+  /* margin-right:5px; */
+}
+
+h2{
+  position:relative;
+}
+
+h2::after{
+  background-color: rgb(15, 15, 15);
+  content: "<--Hover over the header!";
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 5px;
+  position: absolute;
+  color:rgb(255, 255, 255);
+  top: 0px;
+  right:-40px;
+}
+
+h3::after{
+  background-color: rgb(15, 15, 15);
+  content: "<--Hover over the header!";
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 5px;
+  position: absolute;
+  color:rgb(255, 255, 255);
+  top: 940px;
+  right:-40px;
+}
+
+
+/* h3+p::first-line{
+  color:red;
+} */
+a:link{
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited{
+  color:#1098ad
+}
+
+a:hover{
+  color:  rgb(255, 114, 231);
+  text-decoration: underline ;
+}
+
+a:active{
+  color:rgb(114, 215, 255);
+  font-style: italic;
+}
+
+article{
+  margin-bottom: 45px;
+}
+
+/* LVHA: Link, Visited, Hover, Active */
+
+/* Resolving Conflict */
+
+
+/* #copyright{
+  color:rgb(255, 0, 0);
+}
+
+.copyright{
+  color:blue;
+}
+
+.text{
+  color:yellow;
+}
+
+footer p{
+  color:green  !important;
+/* the declaration overrides it */
+/* } */
+
+/* always right selectors as simple as possible and don't add 
+  too many ids or classes in the same selector  */
+
+nav{
+  font-size:18px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CVL-Final-Interactive</title>
+  <link rel="stylesheet" href="/CSS FILE/stylefundamentals(separate).css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <link rel="stylesheet" href="/Libraries/p5.min.js">
+  <link rel="stylesheet" href="/Libraries/p5.sound.js">
+  <link rel="stylesheet" href="/CSS FILE/style.css">
+  <script src="/pixelarray.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-header">
+    <h1> CVL-Progress</h1>
+    <nav class = nav-links>
+      <a href="blog.html">Photos</a>
+      <a href="#">Recordings</a>
+      <a href="/html-css-course-master/HTML CSS COURSE/starter/04-CSS-Layouts/flexbox.html">Doodles</a>
+      <a href="#"></a>
+    </nav> 
+  </header> 
+
+
+  <article>
+    <header class="post-header">
+      <h2 class="Interactive-h2">Pixel Interactive Piece 11/24</h2>
+      <img class="author-image" height="50" width="50" src="/html-css-course-master/HTML CSS COURSE/starter/02-HTML-Fundamentals/laura-jones.jpg" alt="Headshot of Azaraus" height="50" width="50" />
+      <p id="author">Posted by <strong>Azaraus</strong> on Monday, July 7th 2025</p>
+ 
+ 
+      <h1 class="inverted"> Use your phone for the inverted filter</h1>
+ 
+      <div id="sketch-holder" class="sketch-holder">
+         
+      </div>
+
+         <button id="change-fill">Change Fill☆*: .｡.</button>
+         
+      <!-- <button id="change-bck">Change Background☆*: .｡.</button>
+      <button id="clear-btn">Clear me💖</button>
+       -->
+    </header>
+
+    <p>
+     This is progress for my CVL final. In this project, I am using HTML, CSS, and JavaScript (p5.js) to create an interactive pixel art piece. 
+     Users can interact with the piece by changing the fill color of the pixels.
+    </p>
+
+  
+    <h3 class="HowDid">How Did I Do This?</h3>
+    <p>
+      I first used p5.js to create my pixel art piece. I started with using a video capture to display the user on the webcam
+      I then came up with a formula to manipulate the pixels based on their position and color values.
+      Finally, I added interactivity by creating buttons that allow users to change the fill color of the pixels.
+    </p>
+    <p>
+      I had to come up with a way for the button to randomly change the fill color. 
+      I did this by creating a custom variable that generates colors using different values
+      After that I used that variable in the fill() function to change the color of the pixels when the button is pressed.
+    </p>
+    <p>
+      After that I wanted my header to match the fill color of the person on the screen.
+      So I used JavaScript to target the h2 element in my HTML and then 
+      added what I wanted to happen to that variable/h2 element.
+      I then added the action I wanted to happen which was the hover function.
+      Finally I set the color of the h2 to the the variable I made to change the 
+      fill color of the pixels.
+    </p>
+  
+
+    <p>
+      You can learn more at
+      <a href="https://p5js.org/">p5.js</a>.
+    </p>
+
+
+
+    <p>Hopefully you learned something new here. See you next time!</p>
+  </article>
+
+  <aside>
+    <h4>Related posts</h4>
+    <ul class="ul-related-posts">
+      <li>
+        <img src="/HTML CSS COURSE PLEASE DON'T DELETE/starter/02-HTML-Fundamentals/related-1.jpg" alt="Person programming" width="75" />
+        <a href="#">Grandpa Celebration Project</a>
+        <p class="related-author">By Azaraus</p>
+      </li>
+      <li>
+        <img src="/HTML CSS COURSE PLEASE DON'T DELETE/starter/02-HTML-Fundamentals/related-2.jpg" alt="Lightning" width="75" height="75" />
+        <a href="/">CVL Motion Site</a>
+        <p class="related-author">By Azaraus</p>
+      </li>
+      <li>
+        <!-- <img src="/HTML CSS COURSE PLEASE DON'T DELETE/starter/02-HTML-Fundamentals/related-3.jpg" alt="JavaScript code on a screen" width="75" height="75" />
+        <a href="#">Why JavaScript is Awesome</a>
+        <p class="related-author">By Azaraus</p>
+      </li> -->
+    </ul>
+  </aside>
+
+  <!-- <footer>
+    <p id="copyright" class="copyright text">Copyright &copy; 2027 by The Code Magazine.</p>
+  </footer> -->
+</div>
+<!--  -->
+
+<!-- Parent element
+  of the button -->
+</body>
+</html>
