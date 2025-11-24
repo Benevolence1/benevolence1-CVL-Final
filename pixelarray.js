@@ -21,13 +21,13 @@ changeFill.addEventListener('click', () => {
   currentFill = color(h, s, b); // store as a p5 color object
 });
 
-const backgroundButton = document.getElementById('change-bck');
-backgroundButton.addEventListener('click', () => {
-   let h = random(310);   // hue 0–360
-  let s = random(80)    // saturation 0–100
-  let b = random(200);   // brightness 0–100
-  bck = color(h, s, b);
-});
+const BckgroundBtn = document.getElementById('change-bck');
+BckgroundBtn.addEventListener('click', () => {
+  let h = random(310);   // hue 0–360
+  let s = random(100);   // saturation 0–100
+  let b = random(200);
+  bck = color(h, s, b); // store as a p5 color object
+})
 
 
 
