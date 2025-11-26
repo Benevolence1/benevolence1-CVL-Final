@@ -16,8 +16,8 @@ function setup() {
 const changeFill = document.getElementById('change-fill');
 changeFill.addEventListener('click', () => {
   let h = random(310);   // hue 0–360
-  let s = random(200);   // saturation 0–100
-  let b = random(200);   // brightness 0–100
+  let s = random(250);   // saturation 0–100
+  let b = random(230);   // brightness 0–100
   currentFill = color(h, s, b); // store as a p5 color object
 });
 
@@ -25,7 +25,7 @@ const BckgroundBtn = document.getElementById('change-bck');
 BckgroundBtn.addEventListener('click', () => {
   let h = random(310);   // hue 0–360
   let s = random(100);   // saturation 0–100
-  let b = random(200);
+  let b = random(100);
   bck = color(h, s, b); // store as a p5 color object
 })
 
