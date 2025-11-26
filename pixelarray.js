@@ -84,8 +84,7 @@ function draw() {
       var bright = (r + g + b) / 3;
       var wRect = map(bright, 0, 255, 0, vScale);
 
-      stroke(2);
-      strokeWeight(2);
+     noStroke()
       fill(currentFill); // use the global color here
       circle(x * vScale, y * vScale, wRect);
     }
